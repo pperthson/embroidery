@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="zh">
+	<head>
+		<meta charset="utf-8">
+		<title>今日资讯</title>
+		<style>
+		<!--
+
+					.websiteTitle{
+								  font-family:'宋体';
+								  font-weight: lighter;
+								  color: darkred;
+								  padding-left:  20px; 
+								  font-size:25px;
+								  text-align:left;
+								  }
+
+
+					.smallTitle{                    /*小标题样式*/
+								font-family:ultra;    
+								font-size: 25px;
+								letter-spacing: 15px;
+								line-height: 1.5;
+								text-align:center;
+								color:#030303;
+								}
+
+					.articleText{                             /*段落样式*/
+								 font-family:"dancing-script";
+								 font-size: 15px;
+								 text-indent:2em;
+								 text-align:left;
+								 }
+
+
+					.pageContainer{                         /*页面区块样式*/
+								   width:1350px;
+								   height:550px;
+								   margin: auto;
+								   text-align:left;
+								   }
+
+					.tellContainer{                         /*今日热议区块样式*/
+								   width:583px;
+								   margin:inherit;
+								   text-align:center;
+								   padding: 20px;
+								   float: left
+								   }
+
+					.textContainer{                      /*锦绣文章区块样式*/
+								   width:583px;  
+								   margin:auto;
+								   text-align:center;
+								   padding: 20px;
+								   float: right;
+								   }
+
+					.footContainer{                              /*页脚区块样式*/
+								   width:100%;    
+								   height: 65px;
+								   margin: auto;
+								   color: white;
+								   font-family:'宋体';
+								   font-weight: lighter;
+								   text-align:center;
+								   background-color:darkred;
+								   padding: 1px;
+								   float:right;
+								   margin-bottom: 15px;
+								   opacity: 0.8;
+								   }
+					
+					.emphasize{                               /*小区快样式*/
+							   font-weight: bold;
+							   font-family:calligraffitti;
+							   font-size: 20px;
+							   }
+					.top{
+					 	 height: 39px;						/*导航栏宽高背景*/
+					 	 width: 100%;
+					 	 margin-left: 0;
+					 	 background:darkred;
+					 	 position: relative;  					/*在顶部相对位置*/
+					 	 top:5px;
+					 	 margin-bottom: 6px;
+					 	 } 
+
+					.top ul{
+							width: auto;
+							list-style-type: none;
+							white-space: nowrap;
+							overflow: hidden;
+							margin-left: 18.5%;
+							margin-top: 0;
+							padding: 0;
+							}
+
+					.top li{
+							float:left;
+							color: white;
+							margin-right: 17%;				/*设置p元素的右外边距*/
+							overflow: hidden;				/*内容溢出元素框时会被修剪，并且其余内容是不可见的*/
+							padding: 5px 0px;
+							}
+
+					.top li a{								/*设置链接内容显示的格式*/
+							  display: block;				/*链接显示为块元素，整个链接区域都可点击*/
+							  color:white;					
+							  text-align: center;
+							  padding: 3px;
+							  overflow: hidden;
+							  text-decoration: none;		/*去除下划线*/
+							  }
+
+					.top li a:hover{
+									background-color:brown;		/*一级菜单-选中时背景变色*/
+									}
+
+					.top ul li ul{										/*设置二级菜单*/
+								  margin-left: -0.2px;
+								  background: firebrick;
+								  position: relative;
+								  display:none;							/*默认隐藏二级菜单的内容*/
+								  }
+
+					.top ul li ul li{
+									 margin-right: 0;						/*二级菜单li内容的显示*/
+									 float: none;
+									 text-align: center;
+									 }
+
+					.top ul li:hover ul{								/*鼠标选中二级菜单内容时，链接显示为块元素，整个链接区域都可点击*/
+										display: block;
+										}
+
+					.breadcrumb{
+								width: 100%;
+								text-align: left;
+								}
+					.breadcrumb ol{list-style-type: none;}
+					.breadcrumb li {
+									list-style: none;
+									float: left;
+									color: black;
+									font-size: 15px;
+									padding: 5px 0px;
+									}
+					.breadcrumb li a{
+									 list-style: none;
+									 color: #670608;
+									 text-decoration: none;
+									 content: "/";
+									 }
+					.breadcrumb li a:after{content: ">>"}
+
+					.breadcrumb li a:hover{
+										   color: black;		
+										   }
+					/* 未访问的链接 */ 
+					.classT:link{                  /*文本链接*/
+								 color:darkred;
+								 font-family:"楷体";
+								 font-weight: lighter;
+						 		 font-size:18px;
+							     text-decoration: none;/*去除下划线*/
+								 }
+					
+					/* 已访问的链接 */
+					.classT:visited{
+								    color:#C16D6E;
+								    } 
+					
+					/* 鼠标在链接上 */  
+					.classT:hover{ 
+								  color:#131313;
+								  }	
+					/* 未访问的链接 */ 
+				
+		-->
+		</style>
+
+	</head>
+
+	<body>
+
+		<!--页眉部分开始-->
+    	<header>
+			<h3 class="websiteTitle">中国绣的前世今生</h3>
+
+		<!--导航栏开始-->
+			<nav>
+				<!--顶部导航栏-->
+				<div class="top">
+					<ul>
+						<li><a href="../index.html">网站首页</a></li>
+						<li><a href="../Embroidery-Knowledge/Type.html">绣丽江山</a>
+							<ul>
+								<li><a href="../Embroidery-Knowledge/Type.html">绣种</a></li>
+								<li><a href="../Embroidery-Knowledge/Embroidery-Method.html">绣法</a></li>
+								<li><a href="../Embroidery-Knowledge/Acupuncture-Method.html">针法</a></li>
+							</ul>
+						</li>
+						<li><a href="../Embroidery-Process/Embroidery-Field.html">中国绣场</a>
+							<ul>
+								<li><a href="../Embroidery-Process/History.html">前世</a></li>
+								<li><a href="../Embroidery-Process/Today.html">今生</a></li>
+							</ul>
+						</li>
+						<li><a href="Information-Today.html">今日资讯</a></li>
+					</ul>
+				</div>
+
+				<!--面包屑导航栏-->
+				<div class="breadcrumb">
+					<ol>
+						<li><a href="../index.html">首页</a></li>
+						<li><a href="Information-Today.html">今日资讯</a></li>
+						<li>刺绣</li>
+					</ol>
+				</div>
+			</nav>
+			<!--导航栏结束-->
+		</header>
+		<!--页眉部分结束-->
+		<br>
+		<br>
+		<!--页面内容开始-->
+		<div class="pageContainer">
+			<!--主要内容开始-->
+			<main>
+				<!--今日资讯板块开始-->
+
+				  <!--今日热议小板块开始-->
+				  <div class="tellContainer">
+						<article>
+							<h3 class="smallTitle">新闻热议</h3>
+								<p>
+									<span class="emphasize">
+										<a href="news1.html" target="_blank" class="classT">“青海挖掘传统绣种打造‘青绣’品牌”</a>
+									</span>
+								</p>
+
+								<p>
+									<span class="emphasize">
+										<a href="news2.html" target="_blank" class="classT">“《鬓边不是海棠红》如何盘红京剧‘IP’”</a>
+									</span>
+								</p>
+
+								<p>
+									<span class="emphasize">
+										<a href="news3.html" target="_blank" class="classT">“服装花纹上的审美、情感与政治...”</a>
+									</span>
+								</p>
+
+								<p>
+									<span class="emphasize">
+										<a href="news4.html" target="_blank" class="classT">“辽图举办“指尖技艺”微展，展示...”</a>
+									</span>
+								</p>
+
+								<p>
+									<span class="emphasize">
+										<a href="news5.html" target="_blank" class="classT">“为非遗插上创新的翅膀...”</a>
+									</span>
+								</p>
+
+								<p>
+									<span class="emphasize">
+										<a href="news6.html" target="_blank" class="classT">“《两世欢》人气口碑双丰收 三大...”</a>
+									</span>
+								</p>
+
+						</article>
+				</div>
+					<!--今日热议小板块结束-->
+
+					<!--锦绣文章小板块开始-->
+					<div class="textContainer">
+						<article>
+							<h3 class="smallTitle">锦绣文章</h3>
+								<p>
+									<span class="emphasize">
+										<a href="article1.html" target="_blank" class="classT">“十字绣风靡的时候，曾经一度陷入痴迷...”</a>
+									</span>	
+								</p>
+
+								<p>
+									<span class="emphasize">
+										<a href="article2.html" target="_blank" class="classT">“衣橱里那件将军黄的衣衫静静地躺了不知好几...”</a>
+									</span>	
+								</p>
+
+								<p>
+									<span class="emphasize">
+										<a href="article3.html" target="_blank" class="classT">“刺绣，初识它的时候，一脸惊喜，半卷讶然...”</a>
+									</span>	
+								</p>
+
+								<p>
+									<span class="emphasize">
+										<a href="news4.html" target="_blank" class="classT">“（一）诗歌鉴赏——发现美可以是一瞬间...”</a>
+									</span>	
+								</p>
+
+								<p>
+									<span class="emphasize">
+										<a href="news5.html" target="_blank" class="classT">“（二）诗歌鉴赏——我常常想，那是怎样美丽的...”</a>
+									</span>	
+								</p>
+
+								<p>
+									<span class="emphasize">
+										<a href="news6.html" target="_blank" class="classT">“（三）诗歌鉴赏——苏绣已有2000多年的历史...”</a>
+									</span>	
+								</p>
+						</article>
+					</div>
+						<!--锦绣文章小板块结束-->
+	
+				<!--今日资讯板块结束-->
+			</main>
+			<!--主要内容结束-->
+		</div>
+		<!--页脚开始-->
+		<div class="footContainer">
+			<footer>
+				<p style="font-size: 14px;padding-top: 9px;">Copyright &copy; 2020 中国绣的前世今生网 All Rights Reserved</p>
+			</footer>
+		</div>
+		<!--页脚结束-->
+	</body>
+</html>

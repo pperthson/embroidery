@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="zh">
+	<head>
+		<meta charset="utf-8">
+		<title>中国绣的前世今生</title>
+		<style>
+		<!--
+				
+				.websiteTitle{
+							  font-family:'宋体';
+							  font-weight: lighter;
+							  color: darkred;
+							  padding-left:  20px; 
+							  font-size:25px;
+							  text-align:left;
+ 		                      }
+		
+				
+		
+				.articleTitle{
+					          font-family:ultra;      /*标题样式*/
+							  font-size: 33px;
+							  letter-spacing: 15px;
+							  line-height: 1.5;
+							  text-align:center;
+							  color:#030303;
+		                      }
+		
+			
+				.smallTitle{
+					        font-family:ultra;      /*小标题样式*/
+							font-size: 25px;
+							letter-spacing: 15px;
+							line-height: 1.5;
+							text-align:center;
+							color:#030303;
+		                    }
+			
+		
+				.articleText{                             /*段落样式*/
+					        font-family:"dancing-script";
+						    font-size: 15px;
+						    text-indent:2em;
+					        text-align:left;
+							line-height: 25px;
+							padding: 8px;
+		                    }
+
+		
+				.pageContainer{
+					           width:1270px;              /*页面区块样式*/
+							   margin: auto;
+							   text-align:left
+				               }
+		
+				.mountainContainer{
+								   width:650px;              /*绣丽江山区块样式*/
+								   margin:inherit;
+								   text-align:center;
+								   padding: 20px;
+								   float: left;								   
+								   }
+		
+				
+				.spaceContainer{
+					            width:100%;              /*中国绣场区块样式*/
+								margin:auto;
+								text-align:center;
+								padding: 20px;
+								}
+			
+			
+				.imgContainer{
+							  width:100%;
+							  height: 450px;
+							  margin: auto;
+							  text-align: center;
+							  }
+		
+				
+				.todayContainer{
+			                    width:500px;            /*今日资讯区块样式*/
+								margin:auto;
+								text-align:center;
+								padding: 20px;
+					            float:right;
+								}
+		
+				.footContainer{                              /*页脚区块样式*/
+							   width:100%;    
+							   height: 65px;
+							   margin: auto;
+							   color: white;
+							   font-family:'宋体';
+							   font-weight: lighter;
+							   text-align:center;
+							   background-color:darkred;
+							   padding: 1px;
+							   float:right;
+							   margin-bottom: 15px;
+							   opacity: 0.8;
+							   }
+
+		        .emphasize{                               /*小区快样式*/
+					       font-weight: bold;
+						   font-family:calligraffitti;
+						   font-size: 20px;
+		                   }
+				
+				.searchContainer{
+								float: right;
+								font-family:"楷体";
+								color: darkred;
+								margin-top: -43px;
+								margin-right: 50px;
+								}
+			
+				.btn{
+					 background-color:darkred;
+					 border: none;
+					 border-radius: 7px;
+					 color: white;
+					 }
+				.top{
+					 height: 39px;						/*导航栏宽高背景*/
+					 width: 100%;
+					 margin-left: 0;
+					 background:darkred;
+					 position: relative;  					/*在顶部相对位置*/
+					 top:5px;
+					 margin-bottom: 6px;
+					 } 
+
+				.top ul{
+						width: auto;
+						list-style-type: none;
+						white-space: nowrap;
+						overflow: hidden;
+						margin-left: 18.5%;
+						margin-top: 0;
+						padding: 0;
+						}
+
+				.top li{
+						float:left;
+						color: white;
+						margin-right: 17%;				/*设置p元素的右外边距*/
+						overflow: hidden;				/*内容溢出元素框时会被修剪，并且其余内容是不可见的*/
+						padding: 5px 0px;
+						}
+
+				.top li a{								/*设置链接内容显示的格式*/
+						  display: block;				/*链接显示为块元素，整个链接区域都可点击*/
+						  color:white;					
+						  text-align: center;
+						  padding: 3px;
+						  overflow: hidden;
+						  text-decoration: none;		/*去除下划线*/
+						  }
+				
+				.top li a:hover{
+								background-color:brown;		/*一级菜单-选中时背景变色*/
+								}
+				
+				.top ul li ul{										/*设置二级菜单*/
+							  margin-left: -0.2px;
+							  background: firebrick;
+							  position: relative;
+							  display:none;							/*默认隐藏二级菜单的内容*/
+							  }
+
+				.top ul li ul li{
+								 margin-right: 0;						/*二级菜单li内容的显示*/
+					 			 float: none;
+					 			 text-align: center;
+					 			 }
+		
+				.top ul li:hover ul{								/*鼠标选中二级菜单内容时，链接显示为块元素，整个链接区域都可点击*/
+									display: block;
+									}
+		
+				.classA:link{ 
+							 color:#C16D6E;
+							 font-family:"楷体";
+							 font-size:20px;
+							 text-decoration: none;
+							 }
+				
+				/* 已访问的链接 */
+				.classA:visited{
+								color:#131313;
+								} 
+					
+				/* 鼠标在链接上 */  
+				.classA:hover{ 
+							  color:#5A0809;
+							  }	
+				/*面包屑导航栏*/
+				.breadcrumb{
+						    width: 100%;
+							text-align: left;
+							}
+			 	.breadcrumb ol{list-style-type: none;}
+				.breadcrumb li {
+								list-style: none;
+							  	float: left;
+								color: black;
+								font-size: 15px;
+								padding: 5px 0px;
+							  	}
+				.breadcrumb li a{
+								list-style: none;
+								color: #670608;
+								text-decoration: none;
+								content: "/";
+								}
+				.breadcrumb li a:after{content: ">>"}
+
+				.breadcrumb li a:hover{
+									   color: black;		/*一级菜单-选中时背景变色*/
+								       }
+			
+		-->
+		</style>
+	</head>
+
+
+<body>
+   
+   <!--页眉部分开始-->
+    <header>
+			<h3 class="websiteTitle">中国绣的前世今生</h3>
+			
+			<!--搜索框开始-->
+			<div class="searchContainer">
+				<form method="get" role="search">
+					<input type="search" name="search" size="30" placeholder="请输入关键字"/>
+					<input type="submit" value="搜索" class="btn"/>&nbsp;&nbsp;&nbsp;
+					<a href="Login/Login-Page.html" style="color: darkred;text-decoration: none;">登录</a>
+				</form>
+			</div>
+			<!--搜索框结束-->
+    <!--导航栏开始-->
+		<nav>
+			<!--顶部导航栏-->
+			<div class="top">
+				<ul>
+					<li><a href="index.html">网站首页</a></li>
+					<li><a href="Embroidery-Knowledge/Type.html">绣丽江山</a>
+						<ul>
+							<li><a href="Embroidery-Knowledge/Type.html">绣种</a></li>
+							<li><a href="Embroidery-Knowledge/Embroidery-Method.html">绣法</a></li>
+							<li><a href="Embroidery-Knowledge/Acupuncture-Method.html">针法</a></li>
+						</ul>
+					</li>
+					<li><a href="Embroidery-Process/Embroidery-Field.html">中国绣场</a>
+						<ul>
+							<li><a href="Embroidery-Process/History.html">前世</a></li>
+							<li><a href="Embroidery-Process/Today.html">今生</a></li>
+						</ul>
+					</li>
+					<li><a href="Embroidery-Message/Information-Today.html">今日资讯</a></li>
+				</ul>
+			</div>
+
+			<!--面包屑导航栏-->
+			<div class="breadcrumb">
+				<ol>
+					<li>首页</li>
+				</ol>
+			</div>
+		</nav>
+		<!--导航栏结束-->
+	</header>
+	<!--页眉部分结束-->
+	
+	
+	<!--页面内容开始-->
+	<div class="pageContainer">
+	    <!--主要内容开始-->
+		<main>
+			
+			<!--中国绣场板块开始-->
+			<div class="spaceContainer">
+				<article>
+					<h2 class="articleTitle">中国绣场</h2>
+					<!--前世小板块开始-->
+					<div class="imgContainer">
+						<img  width="300" height="400" src="img/Heaven1.jpg" alt="Heaven Gaia S/S Paris 2019" >
+						<img  width="300" height="400" src="img/Heaven2.jpg" alt="Heaven Gaia S/S Paris 2019" >
+						<img  width="300" height="400" src="img/Heaven3.jpg" alt="Heaven Gaia S/S Paris 2019" >
+						<img  width="300" height="400" src="img/Heaven4.jpg" alt="Heaven Gaia S/S Paris 2019" >
+						<br>
+						<a href="Embroidery-Process/Embroidery-Field.html" target="_blank">更多</a>
+					</div>	
+				</article>
+       		 </div>
+			<!--中国绣场板块结束-->
+			
+			
+			
+			<!--绣丽江山板块开始-->
+			<div class="mountainContainer">
+				<article>
+				    <h2 class="articleTitle">绣丽江山</h2>
+				   <!-- 绣种小板块开始-->
+				    <section>
+						<h3 class="smallTitle">绣种</h3>
+						
+							<p class="articleText">
+								<span class="emphasize">苏绣</span>
+								苏绣，江苏省苏州市民间传统美术，国家级非物质文化遗产...
+								<a href="Embroidery-Knowledge/Type.html" target="_blank">详细</a>
+							</p>
+													
+							<p class="articleText">
+								<span class="emphasize">湘绣</span>
+								中国优秀的民族传统工艺之一，湘绣是以湖南长沙为中心的...
+								<a href="Embroidery-Knowledge/Type.html" target="_blank">详细</a>
+							</p>
+							
+							<p class="articleText">
+								<span class="emphasize">蜀绣</span>
+								蜀绣，四川省成都市特产，中国国家地理标志产品。蜀绣又名...
+								<a href="Embroidery-Knowledge/Type.html" target="_blank">详细</a>
+							</p>
+							<p>
+							<small>
+							<a href="Embroidery-Knowledge/Type.html" target="_blank">更多</a>
+							</small>
+							</p>
+					</section>
+					<!--绣种小板块结束-->
+					
+					
+					<!--针法小板块开始-->
+					<section>
+						<h3 class="smallTitle">针法</h3>
+						
+						<p class="articleText">
+							<span class="emphasize">铺针</span>
+							铺针是汉族刺绣传统针法之一，属于广绣辅助针的一种，也称...
+							<a href="Embroidery-Knowledge/Acupuncture-Method.html" target="_blank">详细</a>	
+						</p>
+						
+						<p class="articleText">
+							<span class="emphasize">滚针</span>
+							依纹样线条前起后落，针针紧秘，线条长短一律，约一市分左右。转折处...
+							<a href="Embroidery-Knowledge/Acupuncture-Method.html" target="_blank">详细</a>	
+						</p>
+						<p>
+							<small>
+							<a href="Embroidery-Knowledge/Acupuncture-Method.html" target="_blank">更多</a>
+							</small>
+						</p>
+					</section>	
+					<!--针法小板块结束-->
+				</article>
+			</div>
+			<!--绣丽江山板块结束-->
+			
+			
+			
+			
+			<!--今日资讯板块开始-->
+			<div class="todayContainer">
+			    <article>
+					<h2  class="articleTitle">今日资讯</h2>
+	
+			        <!--今日热议小板块开始-->
+				    <section>
+						<h3 class="smallTitle">今日热议</h3>
+						<p class="articleText">
+							<span class="emphasize">
+								<a href="Embroidery-Message/news2.html" target="_blank" class="classA">“《鬓边不是海棠红》如何盘红京剧‘IP’”</a>
+							</span>
+						</p>
+
+						<p class="articleText">
+							<span class="emphasize">
+								<a href="Embroidery-Message/news3.html" target="_blank" class="classA">“服装花纹上的审美、情感与政治...”</a>
+							</span>
+						</p>
+
+						<p class="articleText">
+							<span class="emphasize">
+								<a href="Embroidery-Message/news4.html" target="_blank" class="classA">“辽图举办“指尖技艺”微展，展示...”</a>
+							</span>
+						</p>
+						<p>
+							<small>
+							<a href="Embroidery-Message/Information-Today.html" target="_blank">更多</a>
+							</small>
+						</p>
+				    </section>
+					<!--今日热议小板块结束-->
+					
+                     <br>
+					<!--锦绣文章小板块开始-->
+					<section>
+						<h3 class="smallTitle">锦绣文章</h3>
+						<p class="articleText">
+							<span class="emphasize">
+								<a href="Embroidery-Message/article3.html" target="_blank" class="classA">锦上添花——大美刺绣</a>
+							</span>
+						</p>
+						<p class="articleText">
+							<span class="emphasize">
+								<a href="Embroidery-Message/article4.html" target="_blank" class="classA">（一）诗歌鉴赏</a>
+							</span>
+						</p>
+					</section>
+					<!--锦绣文章小板块结束-->
+					<p>
+							<small>
+							<a href="Embroidery-Message/Information-Today.html" target="_blank">更多</a>
+							</small>
+						</p>
+				</article>
+			</div>
+			<!--今日资讯板块结束-->
+		</main>
+		<!--主要内容结束	-->
+	</div>
+	<!--页面结束-->
+	
+	
+	<!--页脚开始-->
+	<div class="footContainer">
+		<footer>
+			<p style="font-size: 14px;padding-top: 9px;">Copyright &copy; 2020 中国绣的前世今生网 All Rights Reserved</p>
+		</footer>
+	</div>
+	<!--页脚结束-->
+
+</body>
+</html>
